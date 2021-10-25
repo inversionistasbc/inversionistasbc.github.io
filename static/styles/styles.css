@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #F9F9F9;
+  font-family: 'Asap', sans-serif;
+}
+
+header {
+  background-image: url("/static/images/header.svg");
+  background-repeat:no-repeat;
+  background-size:cover;
+  color: white;
+  font-family: 'Baloo 2', cursive;
+  padding: 38px 22px;
+  position: relative;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 18px;
+}
+
+.card__section {
+  font-family: 'Asap', sans-serif;
+  padding: 20px 25px;
+}
+
+.card {
+  align-items: center;
+  background-color: #fff;
+  border-radius: 10px;
+  display: flex;
+  margin-bottom: 6px;
+  min-width: 100%;
+  padding: 13px 24px;
+}
+
+.card__title {
+  color: #4B4FD0;
+  font-size: 12px;
+  font-weight: bold;
+  width: 123px;
+  text-align: center;
+}
+
+.card__divider {
+  margin-right: 20px;
+}
+
+.card__text {
+  color: #232323;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.button{
+  background-color: #4B4FD0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  height: 36px;
+  margin-top: 10px;
+  width: 108px;
+  font-family: 'Asap', sans-serif;
+  font-weight: 600;
+}
+
+.button__icon{
+  margin-right: 10px;
+}
+
+.button__section{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 30px 56px;
+}
+
+.button__text {
+  color: white;
+  font-size: 10px;
+  text-align: left;
+}
+
+.button__download{
+  align-items: center;
+  display: flex;
+  padding: 7px 9px;
+  text-decoration: none;
+}
+
+footer{
+  background-color: #151744;
+  height: 80px;
+}
