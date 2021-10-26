@@ -118,6 +118,7 @@ footer{
 
 .footer__information_content{
   margin-bottom: 6px;
+  text-decoration: none;
 }
 .footer__information, .footer__divider{
   margin-bottom: 12px;
