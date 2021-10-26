@@ -11,6 +11,10 @@ body {
   font-family: 'Asap', sans-serif;
 }
 
+nav{
+  padding: 15px 122px;
+}
+
 header {
   background-image: url("/static/images/header.svg");
   background-repeat:no-repeat;
@@ -106,13 +110,14 @@ footer{
 }
 
 .footer__information, .footer__politicas{
+  font-family: 'Asap', cursive;
   display: flex;
   flex-direction: column;
   font-size: 11px;
   line-height: 14px;
 }
 
-.footer__information_title,.footer__politicas_title{
+.footer__information_subtitle,.footer__politicas_title{
   color: #05CCBD;
 }
 
@@ -125,17 +130,18 @@ footer{
   margin-bottom: 12px;
 }
 .footer__politicas{
-  font-family: 'Asap', sans-serif;
   font-weight: 600;
 }
 
 .footer__politicas_logo{
-  align-items: center;
-  display: flex;
   font-weight: 400;
   margin-top: 9px;
+  display: flex;
+  flex-wrap: wrap;
 }
-
+.footer__politicas_registro{
+  padding-top:2px;
+}
 .footer__politicas_title{
   margin-bottom: 3px;
 }
@@ -143,4 +149,116 @@ footer{
 .footer__politicas_img{
   height: 18px;
   margin-left: 4px;
+}
+
+@media (min-width: 700px) {
+
+  /* NAV */
+  nav{
+    padding: 58px 515px;
+  }
+  nav img {
+    width: 409px;
+  }
+
+  /* HEADER */
+  header {
+    padding: 162px 182px;
+  }
+  header h1 {
+    font-size: 60px;
+  }
+
+  /* CARD */
+  .card__section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 75px;
+  }
+  .card{
+    background-color: transparent;
+    min-width: 541px;
+    width: 550px;
+    flex-direction: column;
+    padding: 0;
+    margin-bottom: 60px;
+  }
+  .card__divider{
+    display: none;
+  }
+  .card__title{
+    font-size: 35px;
+    width: auto;
+    margin-bottom: 35px;
+  }
+  .card__text{
+    font-size: 50px;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* BUTTON */
+  .button__section{
+    padding: 0px 169px;
+  }
+  .button{
+    width: 316px;
+    height: 132px;
+    border-radius: 30px;
+    margin-bottom: 90px;
+  }
+  .button__download{
+    padding: 28px 32px;
+  }
+  .button__icon{
+    height: 76px;
+    margin-right: 25px;
+  }
+  .button__text{
+    font-size: 30px;
+  }
+
+  /* FOOTER */
+  footer{
+    padding: 47px 81px;
+    font-size: 40px;
+  }
+  .footer__title{
+    margin-bottom: 33px;
+  }
+  .footer__wrapper{
+    display: flex;
+  }
+  .footer__divider{
+    display: none;
+  }
+  .footer__information_subtitle,
+  .footer__information_content,
+  .footer__politicas_title,
+  .footer__politicas_logo{
+    font-size: 35px;
+    line-height: 45px;
+    margin-bottom: 8px;
+  }
+  .footer__information{
+    padding-right: 120px;
+    border-right: 5px solid #03DBD0;
+  }
+  .footer__politicas{
+    padding-left: 120px;
+  }
+  .footer__politicas_title{
+    margin-bottom: 11px;
+    line-height: 50px;
+  }
+  .footer__politicas_logo{
+    line-height: 40px;
+  }
+  .footer__politicas_registro{
+    padding-top: 10px;
+  }
+  .footer__politicas_img{
+    height: 66px;
+  }
 }
