@@ -117,9 +117,9 @@ footer{
 }
 
 .footer__information_content{
-  color: #fff;
+  color: #fff !important;
   margin-bottom: 6px;
-  text-decoration: none;
+  text-decoration: none !important;
 }
 .footer__information, .footer__divider{
   margin-bottom: 12px;
