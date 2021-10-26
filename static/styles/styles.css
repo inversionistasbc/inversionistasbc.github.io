@@ -117,6 +117,7 @@ footer{
 }
 
 .footer__information_content{
+  color: #fff;
   margin-bottom: 6px;
   text-decoration: none;
 }
