@@ -65,11 +65,11 @@ header h1 {
   border-radius: 4px;
   cursor: pointer;
   display: flex;
+  font-family: 'Asap', sans-serif;
+  font-weight: 600;
   height: 36px;
   margin-top: 10px;
   width: 108px;
-  font-family: 'Asap', sans-serif;
-  font-weight: 600;
 }
 
 .button__icon{
@@ -79,7 +79,7 @@ header h1 {
 .button__section{
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 30px 56px;
 }
 
@@ -98,5 +98,44 @@ header h1 {
 
 footer{
   background-color: #151744;
-  height: 80px;
+  color: #fff;
+  font-family: 'Baloo 2', cursive;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 12px 23px 23px;
+}
+
+.footer__information, .footer__politicas{
+  display: flex;
+  flex-direction: column;
+  font-size: 11px;
+  line-height: 14px;
+}
+
+.footer__information_title,.footer__politicas_title{
+  color: #05CCBD;
+}
+
+.footer__information_content{
+  margin-bottom: 6px;
+}
+.footer__information, .footer__divider{
+  margin-bottom: 12px;
+}
+.footer__politicas{
+  font-family: 'Asap', sans-serif;
+  font-weight: 600;
+}
+
+.footer__politicas_logo{
+  font-weight: 400;
+  margin-top: 9px;
+}
+
+.footer__politicas_title{
+  margin-bottom: 3px;
+}
+
+.footer__politicas_img{
+  height: 18px;
 }
