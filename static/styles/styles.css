@@ -76,6 +76,17 @@ header h1 {
   height: 36px;
   margin-top: 10px;
   width: 108px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.button:disabled{
+  cursor: not-allowed;
+  background-color: #dadada;
+}
+
+.button:disabled .button__text{
+  color: #252a40;
 }
 
 .button__icon{
