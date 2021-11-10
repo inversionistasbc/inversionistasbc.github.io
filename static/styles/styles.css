@@ -29,55 +29,56 @@ header {
 }
 
 header h1 {
-  font-size: 18px;
+  font-size: 30px;
 }
 
 .card__section {
   font-family: 'Asap', sans-serif;
-  padding: 20px 25px;
+  padding: 20px 25px 60px 25px;
 }
 
 .card {
   align-items: center;
-  background-color: #fff;
   border-radius: 10px;
   display: flex;
+  flex-direction: column;
   margin-bottom: 6px;
   min-width: 100%;
   padding: 13px 24px;
 }
 
-.card__title {
-  color: #4B4FD0;
-  font-size: 12px;
-  font-weight: bold;
-  width: 123px;
-  text-align: center;
+.card__icon {
+  margin-bottom: 15px;
 }
 
-.card__divider {
-  margin-right: 20px;
+.card__title {
+  color: #4B4FD0;
+  font-size: 14px;
+  font-weight: medium;
+  width: 123px;
+  text-align: center;
+  margin-bottom: 15px;
 }
 
 .card__text {
   color: #232323;
-  font-size: 12px;
+  font-size: 17px;
   font-weight: 700;
 }
 
 .button{
   background-color: #4B4FD0;
   border: none;
-  border-radius: 4px;
+  border-radius: 30px;
   cursor: pointer;
   display: flex;
   font-family: 'Asap', sans-serif;
   font-weight: 600;
-  height: 36px;
-  margin-top: 10px;
-  width: 108px;
-  margin-right: 10px;
-  margin-left: 10px;
+  height: 46px;
+  width: 155px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .button:disabled{
@@ -89,20 +90,23 @@ header h1 {
   color: #252a40;
 }
 
-.button__icon{
+.button__icon {
   margin-right: 10px;
+  width: 16px;
+  height: 21px;
 }
 
 .button__section{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  padding: 30px 56px;
+  padding: 0px 20px 40px 20px;
+  height: 220px;
 }
 
 .button__text {
   color: white;
-  font-size: 10px;
+  font-size: 16px;
   text-align: left;
 }
 
@@ -117,26 +121,31 @@ footer{
   background-color: #151744;
   color: #fff;
   font-family: 'Baloo 2', cursive;
-  font-size: 28px;
+  font-size: 12px;
   font-weight: 700;
   padding: 12px 23px 23px;
 }
-
+.footer__title{
+  font-size: 12px;
+  margin-bottom: 12px;
+}
 .footer__information, .footer__politicas{
   font-family: 'Asap', cursive;
   display: flex;
   flex-direction: column;
-  font-size: 20px;
-  line-height: 14px;
+  font-size: 11px;
+  line-height: 11px;
 }
-
+.footer__information_subtitle{
+  margin-bottom: 3px;
+}
 .footer__information_subtitle,.footer__politicas_title{
   color: #05CCBD;
 }
 
 .footer__information_content{
   color: #fff !important;
-  margin-bottom: 6px;
+  margin-bottom: 12px;
   text-decoration: none !important;
 }
 .footer__information, .footer__divider{
@@ -190,14 +199,12 @@ footer{
     padding-top: 75px;
   }
   .card{
-    background-color: transparent;
     min-width: 541px;
     width: 550px;
-    flex-direction: column;
     padding: 0;
     margin-bottom: 60px;
   }
-  .card__divider{
+  .card__icon{
     display: none;
   }
   .card__title{
@@ -214,6 +221,7 @@ footer{
   /* BUTTON */
   .button__section{
     padding: 0px 169px;
+    height: auto;
   }
   .button{
     width: 316px;
