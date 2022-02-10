@@ -7,171 +7,239 @@
 }
 
 body {
-  background-color: #F9F9F9;
-  font-family: 'Asap', sans-serif;
+  background-color: #FFF;
+  font-family: 'Baloo 2', sans-serif;
 }
 
 nav{
-  padding: 15px 0px;
+  background-color: #4247D2;
   display: flex;
-  justify-content: center;
+  justify-content: start;
+  padding: 15px 15px;
+}
+
+.logo{
+  width: 100px;
 }
 
 header {
-  background-image: url("/static/images/header.svg");
-  background-repeat:no-repeat;
-  background-size:cover;
+  background-color: #4247D2;
   color: white;
-  font-family: 'Baloo 2', cursive;
-  padding: 38px 22px;
+  height: 386px;
+  /* font-family: 'Baloo 2', cursive; */
+  padding: 30px 10px;
   position: relative;
   text-align: center;
+  display: flex;
+  justify-content: flex-end;
 }
 
-header h1 {
-  font-size: 30px;
+.header__banner{
+  bottom: 0;
+  left: 20px;
+  position: absolute;
+  width: 90%;
+}
+.header__wrapper{
+  position: relative;
+  width: 244px;
+}
+.header__wrapper__text{
+  font-size: 25px;
+  line-height: 30px;
+}
+.header__wrapper__icon{
+  height: 30px;
+  right: -5px;
+  top: -10px;
+  position: absolute;
 }
 
-.card__section {
-  font-family: 'Asap', sans-serif;
-  padding: 20px 25px 60px 25px;
-}
-
-.card {
-  align-items: center;
-  border-radius: 10px;
+/* Body */
+.datos{
+  background-color: #fff;
+  padding: 60px 60px;
   display: flex;
   flex-direction: column;
-  margin-bottom: 6px;
-  min-width: 100%;
-  padding: 13px 24px;
+  align-items: center;
 }
 
-.card__icon {
-  margin-bottom: 15px;
+.datos__title{
+  color: #4247D2;
+  font-size: 22px;
+  font-weight: 22px;
 }
 
-.card__title {
-  color: #4B4FD0;
-  font-size: 14px;
-  font-weight: medium;
-  width: 123px;
-  text-align: center;
-  margin-bottom: 15px;
-}
-
-.card__text {
-  color: #232323;
-  font-size: 17px;
-  font-weight: 700;
-}
-
-.button{
-  background-color: #4B4FD0;
-  border: none;
-  border-radius: 30px;
-  cursor: pointer;
+.datos__card{
+  align-items: center;
+  background-color: #FAFAFA;
+  border-radius: 20px;
   display: flex;
-  font-family: 'Asap', sans-serif;
+  height: 190px;
+  flex-direction: column;
+  margin-top: 60px;
+  padding-top: 100px;
+  position: relative;
+  width: 239px;
+}
+.datos__card__title{
+  color: #4B4FD0;
+  font-size: 17px;
+}
+.datos__card__icon{
+  position: absolute;
+  top: -35px;
+}
+.datos__card__fecha{
+  font-size: 14px;
+  font-family: 'Asap';
   font-weight: 600;
-  height: 46px;
-  width: 155px;
+  margin-top: 16px;
+}
+
+/* Slider */
+.carousel__title{
+  color: #4247D2;
+  text-align: center;
+  margin-bottom: 80px;
+}
+.carousel__section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.carousel {
+  background: #FFF;
+  padding: 5px;
+  height: auto;
+  margin-bottom: 40px;
+}
+
+.carousel__cell {
+  height: 302px;
+  width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
-.button:disabled{
-  cursor: not-allowed;
-  background-color: #dadada;
-}
-
-.button:disabled .button__text{
-  color: #252a40;
-}
-
-.button__icon {
-  margin-right: 10px;
-  height: 21px;
-}
-
-.button__section{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  padding: 0px 20px 40px 20px;
-  height: 220px;
-}
-
-.button__text {
-  color: white;
-  font-size: 16px;
-  text-align: left;
-}
-
-.button__download{
-  align-items: center;
-  display: flex;
-  padding: 7px 9px;
-  text-decoration: none;
-}
-
-footer{
-  background-color: #151744;
-  color: #fff;
-  font-family: 'Baloo 2', cursive;
-  font-size: 12px;
-  font-weight: 700;
-  padding: 12px 23px 23px;
-}
-.footer__title{
-  font-size: 12px;
-  margin-bottom: 12px;
-}
-.footer__information, .footer__politicas{
-  font-family: 'Asap', cursive;
+.carousel__card{
+  border-radius: 5px;
+  background-color: #FAFAFA;
+  height: 100%;
+  width: 190px;
   display: flex;
   flex-direction: column;
-  font-size: 11px;
-  line-height: 11px;
-}
-.footer__information_subtitle{
-  margin-bottom: 3px;
-}
-.footer__information_subtitle,.footer__politicas_title{
-  color: #05CCBD;
+  align-items: center;
+  position: relative;
+  padding-top: 130px;
 }
 
-.footer__information_content{
-  color: #fff !important;
-  margin-bottom: 12px;
-  text-decoration: none !important;
+.carousel__card__icon{
+  width: 110px;
+  position: absolute;
+  top: -50px;
 }
-.footer__information, .footer__divider{
-  margin-bottom: 12px;
+
+.carousel__card__title{
+  color: #4B4FD0;
+  font-size: 25px;
+  font-weight: 900;
+  line-height: 30px;
+  text-align: center;
+  height: 58px;
 }
-.footer__politicas{
+
+.carousel__card__button{
+  color: #232323;
+  font-size: 22px;
   font-weight: 600;
-}
-
-.footer__politicas_logo{
-  font-weight: 400;
-  margin-top: 9px;
+  cursor: pointer;
   display: flex;
-  flex-wrap: wrap;
-}
-.footer__politicas_registro{
-  padding-top:2px;
-}
-.footer__politicas_title{
-  margin-bottom: 3px;
+  align-items: center;
+  width: 54px;
+  justify-content: space-between;
+  margin-top: 50px;
 }
 
-.footer__politicas_img{
-  height: 18px;
-  margin-left: 4px;
+.carousel__card__button:hover{
+  text-decoration: underline;
 }
 
+.flickity-viewport{
+  overflow: visible !important;
+}
+
+.flickity-page-dots {
+  display: none;
+}
+
+/* Footer */
+footer{
+  background-color: #151744;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: #fff;
+  padding: 15px;
+  font-family: 'Asap';
+}
+
+.footer__logo{
+  width: 118px;
+  margin-bottom: 18px;
+}
+
+.footer__menu{
+  padding-left: 35px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.footer__menu__item{
+  margin-bottom: 8px;
+}
+
+.footer__info{
+  padding-left: 35px;
+  font-size: 14px;
+  font-weight: 300;
+  margin-top: 18px;
+  margin-bottom: 30px;
+}
+
+.footer__info__item{
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.footer__info__item__icon{
+  margin-right: 10px;
+}
+
+.footer__redes{
+  margin-left: auto;
+  margin-right: auto;
+  width: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__registro{
+  font-size: 11px;
+  line-height: 16px;
+  text-align: center;
+  color: #CCCCCC;
+  margin-top: 35px;
+}
+.footer__copyright{
+  font-size: 9px;
+  line-height: 16px;
+  margin-top: 20px;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+}
 @media (min-width: 700px) {
 
   /* NAV */
