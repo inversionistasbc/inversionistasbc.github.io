@@ -5,6 +5,9 @@
   margin: 0;
   padding: 0;
 }
+a{
+  text-decoration: none;
+}
 
 body {
   background-color: #FFF;
@@ -98,49 +101,56 @@ header {
 }
 
 /* Slider */
-.carousel__title{
+.reportes__desktop{
+  display: none;
+}
+.reportes__title{
   color: #4247D2;
   text-align: center;
-  margin-bottom: 80px;
+  margin-bottom: 20px;
 }
-.carousel__section{
+.reportes__section{
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.carousel {
+.reportes__mobile {
   background: #FFF;
   padding: 5px;
   height: auto;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
-.carousel__cell {
-  height: 302px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
+.reportes__cell {
+  height: 350px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
 }
 
-.carousel__card{
+.reportes__card{
   border-radius: 5px;
   background-color: #FAFAFA;
-  height: 100%;
+  height: 300px;
   width: 190px;
   display: flex;
   flex-direction: column;
   align-items: center;
   position: relative;
   padding-top: 130px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
-.carousel__card__icon{
+.reportes__card__icon{
   width: 110px;
   position: absolute;
   top: -50px;
 }
 
-.carousel__card__title{
+.reportes__card__title{
   color: #4B4FD0;
   font-size: 25px;
   font-weight: 900;
@@ -149,7 +159,7 @@ header {
   height: 58px;
 }
 
-.carousel__card__button{
+.reportes__card__button{
   color: #232323;
   font-size: 22px;
   font-weight: 600;
@@ -159,14 +169,11 @@ header {
   width: 54px;
   justify-content: space-between;
   margin-top: 50px;
+  text-decoration: none;
 }
 
-.carousel__card__button:hover{
+.reportes__card__button:hover{
   text-decoration: underline;
-}
-
-.flickity-viewport{
-  overflow: visible !important;
 }
 
 .flickity-page-dots {
@@ -183,7 +190,9 @@ footer{
   padding: 15px;
   font-family: 'Asap';
 }
-
+footer a{
+  color: #fff;
+}
 .footer__logo{
   width: 118px;
   margin-bottom: 18px;
@@ -241,112 +250,125 @@ footer{
   margin-left: auto;
 }
 @media (min-width: 700px) {
+  /* Navbar */
+  .logo{
+    width: 294px;
+  }
+  /* Header */
+  header{
+    height: 1045px;
+    padding-right: 89px;
+  }
+  .header__banner{
+    height: 862px;
+  }
+  .header__wrapper{
+    width: 650px;
+  }
+  .header__wrapper__text{
+    font-size: 70px;
+    line-height: 70px;
+  }
 
-  /* NAV */
-  nav{
-    padding: 58px 0px;
-  }
-  nav img {
-    width: 409px;
-  }
-
-  /* HEADER */
-  header {
-    padding: 162px 182px;
-  }
-  header h1 {
-    font-size: 60px;
+  .header__wrapper__icon{
+    width: 52px;
+    height: 78px;
+    right: -20px;
+    top: -20px;
   }
 
-  /* CARD */
-  .card__section{
+  /* Datos */
+  .datos__title{
+    font-size: 50px;
+    margin-bottom: 50px;
+  }
+  .datos__wrapper{
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 75px;
+    justify-content: space-between;
+    width: 100%;
   }
-  .card{
-    min-width: 541px;
-    width: 550px;
-    padding: 0;
-    margin-bottom: 60px;
+  .datos__card{
+    width: 342;
+    height: 422px;
+    padding-left: 28px;
+    padding-right: 28px;
+    padding-top: 166px;
+    padding-bottom: 67px;
   }
-  .card__icon{
+  .datos__card__title{
+    font-size: 35px;
+    line-height: 39px;
+    text-align: center;
+    height: 55px;
+    margin-bottom: 70px;
+  }
+  .datos__card__fecha{
+    font-size: 30px;
+    text-align: center;
+    margin-top: 0;
+  }
+
+  /* Reportesf */
+  .reportes__title{
+    font-size: 50px;
+    margin-bottom: 120px;
+  }
+  .reportes__mobile{
     display: none;
   }
-  .card__title{
-    font-size: 35px;
-    width: auto;
-    margin-bottom: 35px;
+  .reportes__desktop{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 75px;
+    padding-right: 75px;
+    padding-bottom: 75px;
+    flex-wrap: wrap;
   }
-  .card__text{
-    font-size: 50px;
-    width: 100%;
-    text-align: center;
-  }
-
-  /* BUTTON */
-  .button__section{
-    padding: 0px 169px;
-    height: auto;
-  }
-  .button{
-    width: 316px;
-    height: 132px;
-    border-radius: 30px;
-    margin-bottom: 90px;
-  }
-  .button__download{
-    padding: 28px 32px;
-  }
-  .button__icon{
-    height: 76px;
-    margin-right: 25px;
-  }
-  .button__text{
-    font-size: 30px;
+  .reportes__card{
+    margin-bottom: 70px;
   }
 
-  /* FOOTER */
+  /* Footer */
   footer{
-    padding: 47px 81px;
-    font-size: 28px;
-  }
-  .footer__title{
-    margin-bottom: 33px;
+    align-items: center;
+    padding: 35px 102px 35px;
   }
   .footer__wrapper{
+    width: 100%;
     display: flex;
   }
-  .footer__divider{
-    display: none;
+  .footer__logo__wrapper{
+    align-self: flex-start;
+    margin-bottom: 45px;
   }
-  .footer__information_subtitle,
-  .footer__information_content,
-  .footer__politicas_title,
-  .footer__politicas_logo{
+  .footer__logo{
+    width: 322px;
+  }
+  .footer__menu{
+    width: 450px;
     font-size: 20px;
-    line-height: 30px;
-    margin-bottom: 8px;
   }
-  .footer__information{
-    padding-right: 120px;
-    border-right: 5px solid #03DBD0;
+  .footer__menu__item,.footer__info__item, .footer__redes img{
+    margin-bottom: 18px;
   }
-  .footer__politicas{
-    padding-left: 120px;
+  .footer__info{
+    margin-top: 0px;
+    width: 450px;
+    font-size: 20px;
   }
-  .footer__politicas_title{
-    margin-bottom: 11px;
-    line-height: 50px;
+  .footer__redes{
+    width: 20px;
+    flex-direction: column;
+    height: 80px;
   }
-  .footer__politicas_logo{
-    line-height: 40px;
+  .footer__redes img{
+    height: 20px;
   }
-  .footer__politicas_registro{
-    padding-top: 10px;
+
+  .footer__registro{
+    font-size: 18px;
   }
-  .footer__politicas_img{
-    height: 66px;
+  .footer__copyright{
+    font-size: 16px;
   }
 }
