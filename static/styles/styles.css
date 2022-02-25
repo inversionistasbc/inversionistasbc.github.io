@@ -123,11 +123,11 @@ header {
 
 .reportes__cell {
   height: 350px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 .reportes__card{
@@ -159,21 +159,9 @@ header {
   height: 58px;
 }
 
-.reportes__card__button{
-  color: #232323;
-  font-size: 22px;
-  font-weight: 600;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  width: 54px;
-  justify-content: space-between;
-  margin-top: 50px;
-  text-decoration: none;
-}
-
 .reportes__card__button:hover{
   text-decoration: underline;
+  color: #4B4FD0;
 }
 
 .flickity-page-dots {
@@ -284,12 +272,16 @@ footer a{
   }
   .datos__wrapper{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 100%;
+    flex-wrap: wrap;
+    max-width: 1400px;
   }
   .datos__card{
-    width: 342;
+    width: 302px;
     height: 422px;
+    margin-left: 20px;
+    margin-right: 20px;
     padding-left: 28px;
     padding-right: 28px;
     padding-top: 166px;
@@ -309,6 +301,11 @@ footer a{
   }
 
   /* Reportesf */
+  .reportes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   .reportes__title{
     font-size: 50px;
     margin-bottom: 120px;
@@ -318,14 +315,15 @@ footer a{
   }
   .reportes__desktop{
     display: flex;
-    justify-content: space-between;
-    padding-left: 75px;
-    padding-right: 75px;
-    padding-bottom: 75px;
+    justify-content: space-around;
     flex-wrap: wrap;
+    max-width: 1040px;
+    width: 100%;
   }
   .reportes__card{
     margin-bottom: 70px;
+    cursor: pointer;
+    height: 230px;
   }
 
   /* Footer */
