@@ -160,7 +160,6 @@ header {
 }
 
 .reportes__card__button:hover{
-  text-decoration: underline;
   color: #4B4FD0;
 }
 
@@ -266,6 +265,9 @@ footer a{
   }
 
   /* Datos */
+  .datos{
+    padding-bottom: 0;
+  }
   .datos__title{
     font-size: 50px;
     margin-bottom: 50px;
@@ -279,25 +281,35 @@ footer a{
   }
   .datos__card{
     width: 302px;
-    height: 422px;
+    height: 350px;
     margin-left: 20px;
     margin-right: 20px;
-    padding-left: 28px;
-    padding-right: 28px;
-    padding-top: 166px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 120px;
     padding-bottom: 67px;
+    margin-bottom: 80px;
+  }
+  .datos__card__icon{
+    height: 150px;
+    top: -55px;
   }
   .datos__card__title{
     font-size: 35px;
     line-height: 39px;
     text-align: center;
-    height: 55px;
-    margin-bottom: 70px;
+    min-height: 75px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
   }
   .datos__card__fecha{
-    font-size: 30px;
+    font-size: 25px;
     text-align: center;
     margin-top: 0;
+    display: flex;
+    align-items: center;
+    min-height: 84px;
   }
 
   /* Reportesf */
@@ -325,7 +337,15 @@ footer a{
     cursor: pointer;
     height: 230px;
   }
-
+  .card__disabled{
+    cursor: not-allowed;
+  }
+  .title__disabled{
+    color: #232323;
+  }
+  .reportes__card__button.title__disabled:hover{
+    text-decoration: none !important;
+  }
   /* Footer */
   footer{
     align-items: center;
