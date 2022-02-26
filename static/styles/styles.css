@@ -84,6 +84,8 @@ header {
   padding-top: 100px;
   position: relative;
   width: 239px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 .datos__card__title{
   color: #4B4FD0;
@@ -93,6 +95,7 @@ header {
   position: absolute;
   top: -35px;
   height: 100px;
+  text-align: center;
 }
 .datos__card__fecha{
   font-size: 14px;
