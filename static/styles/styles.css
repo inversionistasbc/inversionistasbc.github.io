@@ -92,6 +92,7 @@ header {
 .datos__card__icon{
   position: absolute;
   top: -35px;
+  height: 100px;
 }
 .datos__card__fecha{
   font-size: 14px;
@@ -291,7 +292,7 @@ footer a{
     margin-bottom: 80px;
   }
   .datos__card__icon{
-    height: 150px;
+    height: 155px;
     top: -55px;
   }
   .datos__card__title{
