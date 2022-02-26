@@ -95,9 +95,9 @@ header {
   position: absolute;
   top: -35px;
   height: 100px;
-  text-align: center;
 }
 .datos__card__fecha{
+  text-align: center;
   font-size: 14px;
   font-family: 'Asap';
   font-weight: 600;
