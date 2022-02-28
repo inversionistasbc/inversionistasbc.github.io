@@ -343,6 +343,10 @@ footer a{
     margin-bottom: 70px;
     cursor: pointer;
     height: 230px;
+    padding-top: 130px;
+  }
+  .reportes__card__title{
+    font-size: 25px;
   }
   .card__disabled{
     cursor: not-allowed;
