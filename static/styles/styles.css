@@ -105,6 +105,10 @@ header {
 }
 
 /* Slider */
+.reportes{
+  padding-left: 10px;
+  padding-right: 10px;
+}
 .reportes__desktop{
   display: none;
 }
@@ -120,13 +124,12 @@ header {
 }
 .reportes__mobile {
   background: #FFF;
-  padding: 5px;
   height: auto;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 .reportes__cell {
-  height: 350px;
+  height: 250px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -137,7 +140,7 @@ header {
 .reportes__card{
   border-radius: 5px;
   background-color: #FAFAFA;
-  height: 300px;
+  height: 180px;
   width: 190px;
   display: flex;
   flex-direction: column;
@@ -156,7 +159,7 @@ header {
 
 .reportes__card__title{
   color: #4B4FD0;
-  font-size: 25px;
+  font-size: 17px;
   font-weight: 900;
   line-height: 30px;
   text-align: center;
