@@ -22,13 +22,6 @@
       href="https://unpkg.com/flickity@2/dist/flickity.min.css"
     />
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-    <script>
-      function downloadDocumentos() {
-        window.open("https://github.com/inversionistasbc/inversionistasbc.github.io/raw/main/static/files/Cuentas%20Bancarias.pdf");
-        window.open("https://github.com/inversionistasbc/inversionistasbc.github.io/raw/main/static/files/Ficha%20RUC.pdf");
-        window.open("https://github.com/inversionistasbc/inversionistasbc.github.io/raw/main/static/files/Vigencia%20de%20Poder.pdf");
-      }
-    </script>
   </head>
   <body>
     <nav>
@@ -175,17 +168,47 @@
           </a>
         </div>
         <div class="reportes__cell">
-        <a class="reportes__card__button" onclick="downloadDocumentos()">
+        <a class="reportes__card__button"
+        href="/static/files/Vigencia de Poder.pdf"
+        download="Vigencia de Poder">
           <div class="reportes__card">
             <img
               class="reportes__card__icon"
               src="/static/images/documento.svg"
               alt="Reporte"
             />
-            <p class="reportes__card__title">Documentos del fondo</p>
+            <p class="reportes__card__title">Vigencia de poder</p>
             </div>
           </a>
         </div>
+        <div class="reportes__cell">
+          <a class="reportes__card__button"
+          href="/static/files/Cuentas Bancarias.pdf"
+          download="Cuentas Bancarias">
+            <div class="reportes__card">
+              <img
+                class="reportes__card__icon"
+                src="/static/images/documento.svg"
+                alt="Reporte"
+              />
+              <p class="reportes__card__title">Cuentas Bancarias</p>
+              </div>
+            </a>
+          </div>
+          <div class="reportes__cell">
+            <a class="reportes__card__button"
+            href="/static/files/Ficha RUC.pdf"
+            download="Ficha RUC">
+              <div class="reportes__card">
+                <img
+                  class="reportes__card__icon"
+                  src="/static/images/documento.svg"
+                  alt="Reporte"
+                />
+                <p class="reportes__card__title">Ficha RUC</p>
+                </div>
+              </a>
+            </div>
         <div class="reportes__cell">
           <a class="reportes__card__button"
               >
@@ -242,14 +265,39 @@
           </div>
         </a>
         <a class="reportes__card__button"
-        onclick="downloadDocumentos()">
+        href="/static/files/Ficha RUC.pdf"
+        download="Ficha RUC">
           <div class="reportes__card">
             <img
               class="reportes__card__icon"
               src="/static/images/documento.svg"
               alt="Reporte"
             />
-            <p class="reportes__card__title">Documentos del fondo</p>
+            <p class="reportes__card__title">Ficha RUC</p>
+          </div>
+        </a>
+        <a class="reportes__card__button"
+        href="/static/files/Vigencia de Poder.pdf"
+        download="Vigencia de Poder">
+          <div class="reportes__card">
+            <img
+              class="reportes__card__icon"
+              src="/static/images/documento.svg"
+              alt="Reporte"
+            />
+            <p class="reportes__card__title">Vigencia de poder</p>
+          </div>
+        </a>
+        <a class="reportes__card__button"
+        href="/static/files/Cuentas Bancarias.pdf"
+        download="Cuentas Bancarias">
+          <div class="reportes__card">
+            <img
+              class="reportes__card__icon"
+              src="/static/images/documento.svg"
+              alt="Reporte"
+            />
+            <p class="reportes__card__title">Cuentas Bancarias</p>
           </div>
         </a>
         <a class="reportes__card__button">
