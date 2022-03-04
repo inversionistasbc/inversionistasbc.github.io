@@ -22,13 +22,20 @@
       href="https://unpkg.com/flickity@2/dist/flickity.min.css"
     />
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script>
+      function downloadDocumentos() {
+        window.open("https://github.com/inversionistasbc/inversionistasbc.github.io/raw/main/static/files/Cuentas%20Bancarias.pdf");
+        window.open("https://github.com/inversionistasbc/inversionistasbc.github.io/raw/main/static/files/Ficha%20RUC.pdf");
+        window.open("https://github.com/inversionistasbc/inversionistasbc.github.io/raw/main/static/files/Vigencia%20de%20Poder.pdf");
+      }
+    </script>
   </head>
   <body>
     <nav>
       <a class="footer__logo__wrapper" href="https://baldecash.com/">
         <img
           class="logo"
-          src="/static/images/logo-baldecash.svg"
+          src="/static/images/logo-baldecash-home.svg"
           alt="Logo de Baldecash"
         />
       </a>
@@ -168,8 +175,7 @@
           </a>
         </div>
         <div class="reportes__cell">
-        <a class="reportes__card__button"
-        id="downloadDocumentos" onclick="myFunction()">
+        <a class="reportes__card__button" onclick="downloadDocumentos()">
           <div class="reportes__card">
             <img
               class="reportes__card__icon"
@@ -236,7 +242,7 @@
           </div>
         </a>
         <a class="reportes__card__button"
-        id="downloadDocumentos" onclick="myFunction()">
+        onclick="downloadDocumentos()">
           <div class="reportes__card">
             <img
               class="reportes__card__icon"
@@ -327,12 +333,4 @@
       </p>
     </footer>
   </body>
-  <script>
-    function myFunction() {
-      window.open("https://github.com/inversionistasbc/inversionistasbc.github.io/raw/012619a4d74d87954e7d84f66c4516693b72e90b/static/files/Documentos.pdf");
-      window.open("https://github.com/inversionistasbc/inversionistasbc.github.io/raw/012619a4d74d87954e7d84f66c4516693b72e90b/static/files/Documentos.pdf");
-
-      window.open("https://github.com/inversionistasbc/inversionistasbc.github.io/raw/012619a4d74d87954e7d84f66c4516693b72e90b/static/files/Documentos.pdf");
-    }
-  </script>
 </html>
