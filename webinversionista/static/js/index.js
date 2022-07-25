@@ -32,7 +32,7 @@ let data = [
     document.addEventListener("keyup", function(event) {
         if (event.code === 'Enter') {
         storepass();
-        window.location.href = "../../consultainversion.html";
+        window.location.href = "../../webinversionista/consultainversion.html";
         }
     });
     
